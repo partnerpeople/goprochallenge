@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "c19e8887f5d2c543753029b5ffa1bb07"
+build_time: [1568312412, 630238000]
+inputs:
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/AFError.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Alamofire.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/MultipartFormData.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Notifications.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/ParameterEncoding.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Request.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Response.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/ResponseSerialization.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Result.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/ServerTrustPolicy.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/SessionDelegate.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/SessionManager.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/TaskDelegate.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Timeline.swift": [1568309914, 0]
+  "/Users/johnsmith/Desktop/Fitbit/Pods/Alamofire/Source/Validation.swift": [1568309914, 0]

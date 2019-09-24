@@ -1,0 +1,938 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37BC7E4D1E6219593D7E9DE3 /* Pods_FitbitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C7119EFCDC3AEC2930ADCA /* Pods_FitbitTests.framework */; };
+		8D995D5278D22FF2741AB03F /* Pods_Fitbit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D24DD4E7D323BEB12A0CC489 /* Pods_Fitbit.framework */; };
+		B027D690232F710200A87548 /* Prize.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027D68F232F710200A87548 /* Prize.swift */; };
+		B027D692232F79B200A87548 /* SpinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027D691232F79B200A87548 /* SpinViewController.swift */; };
+		B027D694232F7AB400A87548 /* spin_short.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B027D693232F7AB400A87548 /* spin_short.mp3 */; };
+		B027D696232FA6FE00A87548 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B027D695232FA6FE00A87548 /* ResultViewController.swift */; };
+		B04489D5232AB03E00B760C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04489D4232AB03E00B760C2 /* AppDelegate.swift */; };
+		B04489D7232AB03E00B760C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04489D6232AB03E00B760C2 /* ViewController.swift */; };
+		B04489DA232AB03E00B760C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04489D8232AB03E00B760C2 /* Main.storyboard */; };
+		B04489DC232AB03E00B760C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B04489DB232AB03E00B760C2 /* Assets.xcassets */; };
+		B04489DF232AB03E00B760C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B04489DD232AB03E00B760C2 /* LaunchScreen.storyboard */; };
+		B04489EA232AB03F00B760C2 /* FitbitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04489E9232AB03F00B760C2 /* FitbitTests.swift */; };
+		B04489F5232AB03F00B760C2 /* FitbitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04489F4232AB03F00B760C2 /* FitbitUITests.swift */; };
+		B0448A03232AB54B00B760C2 /* APIContants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0448A02232AB54B00B760C2 /* APIContants.swift */; };
+		B0448A05232ABA8200B760C2 /* QRCodeScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0448A04232ABA8200B760C2 /* QRCodeScanViewController.swift */; };
+		B0BCBCC223320D7800539A52 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BCBCC123320D7800539A52 /* NetworkManager.swift */; };
+		B0C65309232B9E4800DE4133 /* SharedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C65308232B9E4800DE4133 /* SharedManager.swift */; };
+		B0C6530B232BBFB100DE4133 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6530A232BBFB100DE4133 /* Store.swift */; };
+		B0C6530F232BC3D700DE4133 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0C6530E232BC3D700DE4133 /* Member.swift */; };
+		EC98DFDE28ED19E3D92D771F /* Pods_FitbitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A5253C0B9F42010B0992F17 /* Pods_FitbitUITests.framework */; };
+		F646E450233197DA003BDF68 /* BeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646E44F233197DA003BDF68 /* BeaconViewController.swift */; };
+		F646E45223319835003BDF68 /* SignalStrengthIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F646E45123319835003BDF68 /* SignalStrengthIndicator.swift */; };
+		F67ED418233963F100EB16EE /* NEUROPOL.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F67ED4172339624100EB16EE /* NEUROPOL.ttf */; };
+		F68E9736232ACC7C00710E24 /* Gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E9735232ACC7C00710E24 /* Gradient.swift */; };
+		F68E9739232AD95200710E24 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E9738232AD95200710E24 /* TextField.swift */; };
+		F6AA2A0C232B21DA0010EB3D /* Seville-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6AA2A09232B21DA0010EB3D /* Seville-Regular.ttf */; };
+		F6AA2A0D232B21DA0010EB3D /* Seville-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6AA2A0A232B21DA0010EB3D /* Seville-Bold.ttf */; };
+		F6AA2A0E232B21DA0010EB3D /* Seville-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6AA2A0B232B21DA0010EB3D /* Seville-Book.ttf */; };
+		F6B59AF82332CE5100ADF205 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B59AF72332CE5100ADF205 /* RoundButton.swift */; };
+		F6B59AFC2332F9EE00ADF205 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B59AFA2332F9EE00ADF205 /* Slide.xib */; };
+		F6B59AFD2332F9EE00ADF205 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B59AFB2332F9EE00ADF205 /* Slide.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B04489E6232AB03F00B760C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04489C9232AB03E00B760C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B04489D0232AB03E00B760C2;
+			remoteInfo = Fitbit;
+		};
+		B04489F1232AB03F00B760C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B04489C9232AB03E00B760C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B04489D0232AB03E00B760C2;
+			remoteInfo = Fitbit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F09E7FE04195215B5C8AF18 /* Pods-FitbitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitbitUITests.release.xcconfig"; path = "Target Support Files/Pods-FitbitUITests/Pods-FitbitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		300B7375D6F6AC3C15DBE0EB /* Pods-Fitbit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitbit.debug.xcconfig"; path = "Target Support Files/Pods-Fitbit/Pods-Fitbit.debug.xcconfig"; sourceTree = "<group>"; };
+		3107773D6DF445E55391C803 /* Pods-FitbitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitbitUITests.debug.xcconfig"; path = "Target Support Files/Pods-FitbitUITests/Pods-FitbitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		36C7119EFCDC3AEC2930ADCA /* Pods_FitbitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitbitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A5253C0B9F42010B0992F17 /* Pods_FitbitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FitbitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64D717590CAE19A4F35C24D5 /* Pods-FitbitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitbitTests.release.xcconfig"; path = "Target Support Files/Pods-FitbitTests/Pods-FitbitTests.release.xcconfig"; sourceTree = "<group>"; };
+		650F41CF722827C4262ADBE2 /* Pods-Fitbit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitbit.release.xcconfig"; path = "Target Support Files/Pods-Fitbit/Pods-Fitbit.release.xcconfig"; sourceTree = "<group>"; };
+		9264E828BD87CEEC8CC5C295 /* Pods-FitbitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FitbitTests.debug.xcconfig"; path = "Target Support Files/Pods-FitbitTests/Pods-FitbitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B027D68F232F710200A87548 /* Prize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Prize.swift; sourceTree = "<group>"; };
+		B027D691232F79B200A87548 /* SpinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinViewController.swift; sourceTree = "<group>"; };
+		B027D693232F7AB400A87548 /* spin_short.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin_short.mp3; sourceTree = "<group>"; };
+		B027D695232FA6FE00A87548 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		B04489D1232AB03E00B760C2 /* GoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04489D4232AB03E00B760C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B04489D6232AB03E00B760C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B04489D9232AB03E00B760C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B04489DB232AB03E00B760C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B04489DE232AB03E00B760C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B04489E0232AB03E00B760C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04489E5232AB03F00B760C2 /* GoProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoProTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04489E9232AB03F00B760C2 /* FitbitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitbitTests.swift; sourceTree = "<group>"; };
+		B04489EB232AB03F00B760C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B04489F0232AB03F00B760C2 /* GoProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04489F4232AB03F00B760C2 /* FitbitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitbitUITests.swift; sourceTree = "<group>"; };
+		B04489F6232AB03F00B760C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0448A02232AB54B00B760C2 /* APIContants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIContants.swift; sourceTree = "<group>"; };
+		B0448A04232ABA8200B760C2 /* QRCodeScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScanViewController.swift; sourceTree = "<group>"; };
+		B0BCBCC123320D7800539A52 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B0C65308232B9E4800DE4133 /* SharedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedManager.swift; sourceTree = "<group>"; };
+		B0C6530A232BBFB100DE4133 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		B0C6530E232BC3D700DE4133 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		D24DD4E7D323BEB12A0CC489 /* Pods_Fitbit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitbit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F646E44F233197DA003BDF68 /* BeaconViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconViewController.swift; sourceTree = "<group>"; };
+		F646E45123319835003BDF68 /* SignalStrengthIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignalStrengthIndicator.swift; sourceTree = "<group>"; };
+		F67ED4172339624100EB16EE /* NEUROPOL.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NEUROPOL.ttf; sourceTree = "<group>"; };
+		F68E9735232ACC7C00710E24 /* Gradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradient.swift; sourceTree = "<group>"; };
+		F68E9738232AD95200710E24 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		F6AA2A09232B21DA0010EB3D /* Seville-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seville-Regular.ttf"; sourceTree = "<group>"; };
+		F6AA2A0A232B21DA0010EB3D /* Seville-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seville-Bold.ttf"; sourceTree = "<group>"; };
+		F6AA2A0B232B21DA0010EB3D /* Seville-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Seville-Book.ttf"; sourceTree = "<group>"; };
+		F6B59AF72332CE5100ADF205 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		F6B59AFA2332F9EE00ADF205 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		F6B59AFB2332F9EE00ADF205 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B04489CE232AB03E00B760C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D995D5278D22FF2741AB03F /* Pods_Fitbit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04489E2232AB03F00B760C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37BC7E4D1E6219593D7E9DE3 /* Pods_FitbitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04489ED232AB03F00B760C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC98DFDE28ED19E3D92D771F /* Pods_FitbitUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DC6DB12B97505F8346CD0A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D24DD4E7D323BEB12A0CC489 /* Pods_Fitbit.framework */,
+				36C7119EFCDC3AEC2930ADCA /* Pods_FitbitTests.framework */,
+				4A5253C0B9F42010B0992F17 /* Pods_FitbitUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FCAA3AB653D35642D379BDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				300B7375D6F6AC3C15DBE0EB /* Pods-Fitbit.debug.xcconfig */,
+				650F41CF722827C4262ADBE2 /* Pods-Fitbit.release.xcconfig */,
+				9264E828BD87CEEC8CC5C295 /* Pods-FitbitTests.debug.xcconfig */,
+				64D717590CAE19A4F35C24D5 /* Pods-FitbitTests.release.xcconfig */,
+				3107773D6DF445E55391C803 /* Pods-FitbitUITests.debug.xcconfig */,
+				0F09E7FE04195215B5C8AF18 /* Pods-FitbitUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B04489C8232AB03E00B760C2 = {
+			isa = PBXGroup;
+			children = (
+				B04489D3232AB03E00B760C2 /* Fitbit */,
+				B04489E8232AB03F00B760C2 /* FitbitTests */,
+				B04489F3232AB03F00B760C2 /* FitbitUITests */,
+				B04489D2232AB03E00B760C2 /* Products */,
+				4FCAA3AB653D35642D379BDE /* Pods */,
+				1DC6DB12B97505F8346CD0A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B04489D2232AB03E00B760C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B04489D1232AB03E00B760C2 /* GoPro.app */,
+				B04489E5232AB03F00B760C2 /* GoProTests.xctest */,
+				B04489F0232AB03F00B760C2 /* GoProUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B04489D3232AB03E00B760C2 /* Fitbit */ = {
+			isa = PBXGroup;
+			children = (
+				F6B59AF92332F9DF00ADF205 /* View */,
+				F6AA2A08232B21DA0010EB3D /* Fonts */,
+				B0C6530D232BC3A800DE4133 /* Model */,
+				F68E9737232ACCAE00710E24 /* Class */,
+				B04489D4232AB03E00B760C2 /* AppDelegate.swift */,
+				B04489D6232AB03E00B760C2 /* ViewController.swift */,
+				B0448A04232ABA8200B760C2 /* QRCodeScanViewController.swift */,
+				F646E44F233197DA003BDF68 /* BeaconViewController.swift */,
+				B0448A02232AB54B00B760C2 /* APIContants.swift */,
+				B0C65308232B9E4800DE4133 /* SharedManager.swift */,
+				B027D691232F79B200A87548 /* SpinViewController.swift */,
+				B027D695232FA6FE00A87548 /* ResultViewController.swift */,
+				B0BCBCC123320D7800539A52 /* NetworkManager.swift */,
+				B04489D8232AB03E00B760C2 /* Main.storyboard */,
+				B04489DB232AB03E00B760C2 /* Assets.xcassets */,
+				B027D693232F7AB400A87548 /* spin_short.mp3 */,
+				B04489DD232AB03E00B760C2 /* LaunchScreen.storyboard */,
+				B04489E0232AB03E00B760C2 /* Info.plist */,
+			);
+			path = Fitbit;
+			sourceTree = "<group>";
+		};
+		B04489E8232AB03F00B760C2 /* FitbitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B04489E9232AB03F00B760C2 /* FitbitTests.swift */,
+				B04489EB232AB03F00B760C2 /* Info.plist */,
+			);
+			path = FitbitTests;
+			sourceTree = "<group>";
+		};
+		B04489F3232AB03F00B760C2 /* FitbitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B04489F4232AB03F00B760C2 /* FitbitUITests.swift */,
+				B04489F6232AB03F00B760C2 /* Info.plist */,
+			);
+			path = FitbitUITests;
+			sourceTree = "<group>";
+		};
+		B0C6530D232BC3A800DE4133 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B0C6530A232BBFB100DE4133 /* Store.swift */,
+				B0C6530E232BC3D700DE4133 /* Member.swift */,
+				B027D68F232F710200A87548 /* Prize.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F68E9737232ACCAE00710E24 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				F6B59AF72332CE5100ADF205 /* RoundButton.swift */,
+				F646E45123319835003BDF68 /* SignalStrengthIndicator.swift */,
+				F68E9735232ACC7C00710E24 /* Gradient.swift */,
+				F68E9738232AD95200710E24 /* TextField.swift */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		F6AA2A08232B21DA0010EB3D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F67ED4172339624100EB16EE /* NEUROPOL.ttf */,
+				F6AA2A09232B21DA0010EB3D /* Seville-Regular.ttf */,
+				F6AA2A0A232B21DA0010EB3D /* Seville-Bold.ttf */,
+				F6AA2A0B232B21DA0010EB3D /* Seville-Book.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F6B59AF92332F9DF00ADF205 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F6B59AFB2332F9EE00ADF205 /* Slide.swift */,
+				F6B59AFA2332F9EE00ADF205 /* Slide.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B04489D0232AB03E00B760C2 /* GoPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04489F9232AB03F00B760C2 /* Build configuration list for PBXNativeTarget "GoPro" */;
+			buildPhases = (
+				D4A58CA2C59A97EEA747D111 /* [CP] Check Pods Manifest.lock */,
+				B04489CD232AB03E00B760C2 /* Sources */,
+				B04489CE232AB03E00B760C2 /* Frameworks */,
+				B04489CF232AB03E00B760C2 /* Resources */,
+				89B1A222B506A67C8CD2F746 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoPro;
+			productName = Fitbit;
+			productReference = B04489D1232AB03E00B760C2 /* GoPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B04489E4232AB03F00B760C2 /* GoProTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04489FC232AB03F00B760C2 /* Build configuration list for PBXNativeTarget "GoProTests" */;
+			buildPhases = (
+				87E09AF27C22BECCE32AE673 /* [CP] Check Pods Manifest.lock */,
+				B04489E1232AB03F00B760C2 /* Sources */,
+				B04489E2232AB03F00B760C2 /* Frameworks */,
+				B04489E3232AB03F00B760C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B04489E7232AB03F00B760C2 /* PBXTargetDependency */,
+			);
+			name = GoProTests;
+			productName = FitbitTests;
+			productReference = B04489E5232AB03F00B760C2 /* GoProTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B04489EF232AB03F00B760C2 /* GoProUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B04489FF232AB03F00B760C2 /* Build configuration list for PBXNativeTarget "GoProUITests" */;
+			buildPhases = (
+				A423E0468D15EFE18D263599 /* [CP] Check Pods Manifest.lock */,
+				B04489EC232AB03F00B760C2 /* Sources */,
+				B04489ED232AB03F00B760C2 /* Frameworks */,
+				B04489EE232AB03F00B760C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B04489F2232AB03F00B760C2 /* PBXTargetDependency */,
+			);
+			name = GoProUITests;
+			productName = FitbitUITests;
+			productReference = B04489F0232AB03F00B760C2 /* GoProUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B04489C9232AB03E00B760C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Partnerpeople;
+				TargetAttributes = {
+					B04489D0232AB03E00B760C2 = {
+						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					B04489E4232AB03F00B760C2 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B04489D0232AB03E00B760C2;
+					};
+					B04489EF232AB03F00B760C2 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = B04489D0232AB03E00B760C2;
+					};
+				};
+			};
+			buildConfigurationList = B04489CC232AB03E00B760C2 /* Build configuration list for PBXProject "GoPro" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B04489C8232AB03E00B760C2;
+			productRefGroup = B04489D2232AB03E00B760C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B04489D0232AB03E00B760C2 /* GoPro */,
+				B04489E4232AB03F00B760C2 /* GoProTests */,
+				B04489EF232AB03F00B760C2 /* GoProUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B04489CF232AB03E00B760C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04489DF232AB03E00B760C2 /* LaunchScreen.storyboard in Resources */,
+				B04489DC232AB03E00B760C2 /* Assets.xcassets in Resources */,
+				F6AA2A0E232B21DA0010EB3D /* Seville-Book.ttf in Resources */,
+				F67ED418233963F100EB16EE /* NEUROPOL.ttf in Resources */,
+				F6B59AFC2332F9EE00ADF205 /* Slide.xib in Resources */,
+				F6AA2A0C232B21DA0010EB3D /* Seville-Regular.ttf in Resources */,
+				B027D694232F7AB400A87548 /* spin_short.mp3 in Resources */,
+				B04489DA232AB03E00B760C2 /* Main.storyboard in Resources */,
+				F6AA2A0D232B21DA0010EB3D /* Seville-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04489E3232AB03F00B760C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04489EE232AB03F00B760C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		87E09AF27C22BECCE32AE673 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitbitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89B1A222B506A67C8CD2F746 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitbit/Pods-Fitbit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Fitbit/Pods-Fitbit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fitbit/Pods-Fitbit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A423E0468D15EFE18D263599 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FitbitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4A58CA2C59A97EEA747D111 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fitbit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B04489CD232AB03E00B760C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6B59AF82332CE5100ADF205 /* RoundButton.swift in Sources */,
+				B027D696232FA6FE00A87548 /* ResultViewController.swift in Sources */,
+				B0C65309232B9E4800DE4133 /* SharedManager.swift in Sources */,
+				B04489D7232AB03E00B760C2 /* ViewController.swift in Sources */,
+				B0C6530B232BBFB100DE4133 /* Store.swift in Sources */,
+				B027D692232F79B200A87548 /* SpinViewController.swift in Sources */,
+				B027D690232F710200A87548 /* Prize.swift in Sources */,
+				B04489D5232AB03E00B760C2 /* AppDelegate.swift in Sources */,
+				F6B59AFD2332F9EE00ADF205 /* Slide.swift in Sources */,
+				F68E9739232AD95200710E24 /* TextField.swift in Sources */,
+				F646E45223319835003BDF68 /* SignalStrengthIndicator.swift in Sources */,
+				B0448A03232AB54B00B760C2 /* APIContants.swift in Sources */,
+				F646E450233197DA003BDF68 /* BeaconViewController.swift in Sources */,
+				B0448A05232ABA8200B760C2 /* QRCodeScanViewController.swift in Sources */,
+				B0BCBCC223320D7800539A52 /* NetworkManager.swift in Sources */,
+				F68E9736232ACC7C00710E24 /* Gradient.swift in Sources */,
+				B0C6530F232BC3D700DE4133 /* Member.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04489E1232AB03F00B760C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04489EA232AB03F00B760C2 /* FitbitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B04489EC232AB03F00B760C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B04489F5232AB03F00B760C2 /* FitbitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B04489E7232AB03F00B760C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B04489D0232AB03E00B760C2 /* GoPro */;
+			targetProxy = B04489E6232AB03F00B760C2 /* PBXContainerItemProxy */;
+		};
+		B04489F2232AB03F00B760C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B04489D0232AB03E00B760C2 /* GoPro */;
+			targetProxy = B04489F1232AB03F00B760C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B04489D8232AB03E00B760C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04489D9232AB03E00B760C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B04489DD232AB03E00B760C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B04489DE232AB03E00B760C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B04489F7232AB03F00B760C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B04489F8232AB03F00B760C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B04489FA232AB03F00B760C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 300B7375D6F6AC3C15DBE0EB /* Pods-Fitbit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39PNH6XQ75;
+				INFOPLIST_FILE = Fitbit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"QRCodeReader\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.partnerpeople.gopro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B04489FB232AB03F00B760C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650F41CF722827C4262ADBE2 /* Pods-Fitbit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39PNH6XQ75;
+				INFOPLIST_FILE = Fitbit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"QRCodeReader\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"SDWebImage\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.partnerpeople.gopro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B04489FD232AB03F00B760C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9264E828BD87CEEC8CC5C295 /* Pods-FitbitTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78MVC2E3Y;
+				INFOPLIST_FILE = FitbitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.partnerpeople.FitbitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoPro.app/GoPro";
+			};
+			name = Debug;
+		};
+		B04489FE232AB03F00B760C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64D717590CAE19A4F35C24D5 /* Pods-FitbitTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78MVC2E3Y;
+				INFOPLIST_FILE = FitbitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.partnerpeople.FitbitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoPro.app/GoPro";
+			};
+			name = Release;
+		};
+		B0448A00232AB03F00B760C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3107773D6DF445E55391C803 /* Pods-FitbitUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78MVC2E3Y;
+				INFOPLIST_FILE = FitbitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.partnerpeople.FitbitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitbit;
+			};
+			name = Debug;
+		};
+		B0448A01232AB03F00B760C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F09E7FE04195215B5C8AF18 /* Pods-FitbitUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78MVC2E3Y;
+				INFOPLIST_FILE = FitbitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.partnerpeople.FitbitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Fitbit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B04489CC232AB03E00B760C2 /* Build configuration list for PBXProject "GoPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04489F7232AB03F00B760C2 /* Debug */,
+				B04489F8232AB03F00B760C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04489F9232AB03F00B760C2 /* Build configuration list for PBXNativeTarget "GoPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04489FA232AB03F00B760C2 /* Debug */,
+				B04489FB232AB03F00B760C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04489FC232AB03F00B760C2 /* Build configuration list for PBXNativeTarget "GoProTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B04489FD232AB03F00B760C2 /* Debug */,
+				B04489FE232AB03F00B760C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B04489FF232AB03F00B760C2 /* Build configuration list for PBXNativeTarget "GoProUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0448A00232AB03F00B760C2 /* Debug */,
+				B0448A01232AB03F00B760C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B04489C9232AB03E00B760C2 /* Project object */;
+}
